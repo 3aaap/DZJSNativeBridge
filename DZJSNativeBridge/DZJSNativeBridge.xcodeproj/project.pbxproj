@@ -11,7 +11,8 @@
 		DA23A90A1C83E16800A74E39 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA23A9091C83E16800A74E39 /* AppDelegate.m */; };
 		DA23A9121C83E16800A74E39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA23A9111C83E16800A74E39 /* Assets.xcassets */; };
 		DA23A9151C83E16800A74E39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA23A9131C83E16800A74E39 /* LaunchScreen.storyboard */; };
-		DA23A91E1C83F19000A74E39 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA23A91D1C83F19000A74E39 /* MainViewController.m */; };
+		DA23A9221C84145200A74E39 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA23A9211C84145200A74E39 /* MainViewController.m */; };
+		DA23A9241C8415A300A74E39 /* TestJSBridge__tradition.html in Resources */ = {isa = PBXBuildFile; fileRef = DA23A9231C8415A300A74E39 /* TestJSBridge__tradition.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +24,8 @@
 		DA23A9141C83E16800A74E39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA23A9161C83E16900A74E39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA23A91C1C83F19000A74E39 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		DA23A91D1C83F19000A74E39 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		DA23A9211C84145200A74E39 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		DA23A9231C8415A300A74E39 /* TestJSBridge__tradition.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = TestJSBridge__tradition.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +58,11 @@
 		DA23A9041C83E16800A74E39 /* DZJSNativeBridge */ = {
 			isa = PBXGroup;
 			children = (
+				DA23A9231C8415A300A74E39 /* TestJSBridge__tradition.html */,
 				DA23A9081C83E16800A74E39 /* AppDelegate.h */,
 				DA23A9091C83E16800A74E39 /* AppDelegate.m */,
 				DA23A91C1C83F19000A74E39 /* MainViewController.h */,
-				DA23A91D1C83F19000A74E39 /* MainViewController.m */,
+				DA23A9211C84145200A74E39 /* MainViewController.m */,
 				DA23A9111C83E16800A74E39 /* Assets.xcassets */,
 				DA23A9131C83E16800A74E39 /* LaunchScreen.storyboard */,
 				DA23A9161C83E16900A74E39 /* Info.plist */,
@@ -135,6 +138,7 @@
 			files = (
 				DA23A9151C83E16800A74E39 /* LaunchScreen.storyboard in Resources */,
 				DA23A9121C83E16800A74E39 /* Assets.xcassets in Resources */,
+				DA23A9241C8415A300A74E39 /* TestJSBridge__tradition.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,7 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA23A90A1C83E16800A74E39 /* AppDelegate.m in Sources */,
-				DA23A91E1C83F19000A74E39 /* MainViewController.m in Sources */,
+				DA23A9221C84145200A74E39 /* MainViewController.m in Sources */,
 				DA23A9071C83E16800A74E39 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
