@@ -6,6 +6,7 @@
 //  Copyright © 2016年 song_dzhong. All rights reserved.
 //
 
+#import <JavaScriptCore/JavaScriptCore.h>
 #import <UIKit/UIKit.h>
 
 @interface MainViewController : UIViewController
