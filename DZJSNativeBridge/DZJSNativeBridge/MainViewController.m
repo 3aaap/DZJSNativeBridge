@@ -7,6 +7,7 @@
 //
 
 #import "MainViewController.h"
+#import "NextViewController.h"
 
 @interface MainViewController () <UIWebViewDelegate>
 
@@ -19,11 +20,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    self.title = @"UIWebView";
     UIWebView* webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
     self.webView = webView;
     self.webView.delegate = self;
     [self.view addSubview:webView];
+
+    UIBarButtonItem* nextVC = [[UIBarButtonItem alloc] initWithTitle:@"next" style:0 target:self action:@selector(nextVC)];
+    self.navigationItem.rightBarButtonItem = nextVC;
+}
+
+- (void)nextVC
+{
+    NextViewController* vc = [[NextViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -34,10 +44,6 @@
     [self.webView loadHTMLString:HTMLStr baseURL:nil];
 }
 
-- (BOOL)prefersStatusBarHidden
-{
-    return YES;
-}
 
 #pragma mark----- UIWebViewDelegate -----
 

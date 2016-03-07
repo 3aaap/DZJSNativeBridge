@@ -13,6 +13,8 @@
 		DA23A9151C83E16800A74E39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA23A9131C83E16800A74E39 /* LaunchScreen.storyboard */; };
 		DA23A9221C84145200A74E39 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA23A9211C84145200A74E39 /* MainViewController.m */; };
 		DA23A9241C8415A300A74E39 /* TestJSBridge__tradition.html in Resources */ = {isa = PBXBuildFile; fileRef = DA23A9231C8415A300A74E39 /* TestJSBridge__tradition.html */; };
+		DAD3FFA51C8C0324003600D1 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD3FFA41C8C0324003600D1 /* NextViewController.m */; };
+		DAD3FFA71C8C3A50003600D1 /* TestJSBridge__tradition_WK.html in Resources */ = {isa = PBXBuildFile; fileRef = DAD3FFA61C8C3A50003600D1 /* TestJSBridge__tradition_WK.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		DA23A91C1C83F19000A74E39 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		DA23A9211C84145200A74E39 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		DA23A9231C8415A300A74E39 /* TestJSBridge__tradition.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = TestJSBridge__tradition.html; sourceTree = "<group>"; };
+		DAD3FFA31C8C0324003600D1 /* NextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
+		DAD3FFA41C8C0324003600D1 /* NextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
+		DAD3FFA61C8C3A50003600D1 /* TestJSBridge__tradition_WK.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = TestJSBridge__tradition_WK.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +64,11 @@
 			isa = PBXGroup;
 			children = (
 				DA23A9231C8415A300A74E39 /* TestJSBridge__tradition.html */,
+				DAD3FFA61C8C3A50003600D1 /* TestJSBridge__tradition_WK.html */,
 				DA23A9081C83E16800A74E39 /* AppDelegate.h */,
 				DA23A9091C83E16800A74E39 /* AppDelegate.m */,
+				DAD3FFA31C8C0324003600D1 /* NextViewController.h */,
+				DAD3FFA41C8C0324003600D1 /* NextViewController.m */,
 				DA23A91C1C83F19000A74E39 /* MainViewController.h */,
 				DA23A9211C84145200A74E39 /* MainViewController.m */,
 				DA23A9111C83E16800A74E39 /* Assets.xcassets */,
@@ -137,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA23A9151C83E16800A74E39 /* LaunchScreen.storyboard in Resources */,
+				DAD3FFA71C8C3A50003600D1 /* TestJSBridge__tradition_WK.html in Resources */,
 				DA23A9121C83E16800A74E39 /* Assets.xcassets in Resources */,
 				DA23A9241C8415A300A74E39 /* TestJSBridge__tradition.html in Resources */,
 			);
@@ -150,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA23A90A1C83E16800A74E39 /* AppDelegate.m in Sources */,
+				DAD3FFA51C8C0324003600D1 /* NextViewController.m in Sources */,
 				DA23A9221C84145200A74E39 /* MainViewController.m in Sources */,
 				DA23A9071C83E16800A74E39 /* main.m in Sources */,
 			);

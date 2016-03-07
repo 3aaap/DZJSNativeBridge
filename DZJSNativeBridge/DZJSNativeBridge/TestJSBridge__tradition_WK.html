@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TestJSBridge__tradition</title>
+</head>
+<body>
+<script type="text/javascript">
+	function btnOnClickBaidu() {
+		var url = "http://www.baidu.com";
+		alert("马上跳转的页面是:" + url);
+		window.location.href = url;
+	}
+	function btnOnClickNative() {
+		window.webkit.messageHandlers.test.postMessage("{\"string\":\"Hello World\"}");
+	}
+	function btnOnClickNativeWithConfig() {
+		var url = "DZBridge://printSomeWords?{\"string\":\"Hello World\"}";
+		alert("马上跳转的页面是:" + url);
+		window.location.href = url;
+	}
+    function pageDidLoad() {
+        alert("页面加载完毕！");
+        return 11;
+    }
+</script>
+<div align="center">
+	<button onclick="btnOnClickBaidu()">跳转百度</button>
+	<button onclick="btnOnClickNative()">跳转Native</button>
+	<button onclick="btnOnClickNativeWithConfig()">跳转Native并传参</button>
+</div>
+</div>
+</body>
+</html>
