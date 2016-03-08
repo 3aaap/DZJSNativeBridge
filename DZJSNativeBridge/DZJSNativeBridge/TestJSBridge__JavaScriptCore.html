@@ -16,8 +16,9 @@
 
 <script>
     var callShare = function() {
-        var shareInfo = JSON.stringify({"title": "标题", "desc": "内容", "shareUrl": "http://www.jianshu.com/p/f896d73c670a"});
-        DZBridge.share(shareInfo);
+        var shareInfo = JSON.stringify({"title": "标题", "desc": "内容", "shareUrl": "http://www.jianshu.com"});
+        var str = DZBridge.share(shareInfo);
+        alert(str);
     }
 
     var picCallback = function(photos) {

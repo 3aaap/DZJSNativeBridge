@@ -11,7 +11,7 @@
 @protocol JSObjcDelegate <JSExport>
 
 - (void)callCamera;
-- (void)share:(NSString*)shareString;
+- (NSString*)share:(NSString*)shareString;
 
 @end
 
@@ -37,6 +37,19 @@
 
     NSURL* url = [[NSBundle mainBundle] URLForResource:@"TestJSBridge__JavaScriptCore" withExtension:@"html"];
     [self.webView loadRequest:[[NSURLRequest alloc] initWithURL:url]];
+
+    UIButton* btn = [[UIButton alloc] init];
+    [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
+    [btn setTitle:@"执行JS" forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    btn.backgroundColor = [UIColor darkGrayColor];
+    btn.frame = CGRectMake(0, 400, 100, 30);
+    [self.view addSubview:btn];
+}
+
+- (void)btnClick
+{
+    [self.jsContext evaluateScript:@"alert(\"执行 JS\")"];
 }
 
 #pragma mark - UIWebViewDelegate
@@ -44,7 +57,8 @@
 - (void)webViewDidFinishLoad:(UIWebView*)webView
 {
     self.jsContext = [webView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];
-    self.jsContext[@"DZBridge"] = self;
+    //    self.jsContext[@"DZBridge"] = self;
+    [self.jsContext setObject:self forKeyedSubscript:@"DZBridge"];
     self.jsContext.exceptionHandler = ^(JSContext* context, JSValue* exceptionValue) {
         context.exception = exceptionValue;
         NSLog(@"异常信息：%@", exceptionValue);
@@ -61,7 +75,7 @@
     [picCallback callWithArguments:@[ @"photos" ]];
 }
 
-- (void)share:(NSString*)shareString
+- (NSString*)share:(NSString*)shareString
 {
     NSLog(@"share:%@", shareString);
     // 分享成功回调js的方法shareCallback
@@ -69,6 +83,7 @@
     //    JSValue* shareCallback = [self.jsContext objectForKeyedSubscript:@"shareCallback"];
     NSLog(@"%@", [shareCallback toString]);
     [shareCallback callWithArguments:nil];
+    return @"执行完毕";
 }
 
 @end
