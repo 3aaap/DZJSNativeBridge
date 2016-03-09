@@ -72,7 +72,7 @@
     NSLog(@"callCamera");
     // 获取到照片之后在回调js的方法picCallback把图片传出去
     JSValue* picCallback = self.jsContext[@"picCallback"];
-    [picCallback callWithArguments:@[ @"photos" ]];
+    [picCallback callWithArguments:@[ @"photoss" ]];
 }
 
 - (NSString*)share:(NSString*)shareString
@@ -83,7 +83,7 @@
     //    JSValue* shareCallback = [self.jsContext objectForKeyedSubscript:@"shareCallback"];
     NSLog(@"%@", [shareCallback toString]);
     [shareCallback callWithArguments:nil];
-    return @"执行完毕";
+    return @"执行完毕！";
 }
 
 @end
