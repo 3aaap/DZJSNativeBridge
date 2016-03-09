@@ -85,7 +85,7 @@
  */
 - (void)userContentController:(WKUserContentController*)userContentController didReceiveScriptMessage:(WKScriptMessage*)message
 {
-    NSLog(@"%@", message);
+    NSLog(@"name:%@, body:%@", message.name, message.body);
 }
 
 @end
