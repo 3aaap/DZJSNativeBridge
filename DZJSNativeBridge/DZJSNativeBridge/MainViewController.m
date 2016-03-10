@@ -80,7 +80,7 @@
     NSLog(@"share:%@", shareString);
     // 分享成功回调js的方法shareCallback
     JSValue* shareCallback = self.jsContext[@"shareCallback"];
-    //    JSValue* shareCallback = [self.jsContext objectForKeyedSubscript:@"shareCallback"];
+//        JSValue* shareCallback = [self.jsContext objectForKeyedSubscript:@"shareCallback"];
     NSLog(@"%@", [shareCallback toString]);
     [shareCallback callWithArguments:nil];
     return @"执行完毕！";
